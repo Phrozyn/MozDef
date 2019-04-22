@@ -489,6 +489,10 @@ if ( Meteor.isClient ) {
                         require( '/imports/themes/dark/mozdef.css' );
                     } else if ( preferenceRecord.theme == 'Light' ) {
                         require( '/imports/themes/light/mozdef.css' )
+                    } else if ( preferenceRecord.theme == 'Light Side Nav' ) {
+                        require( '/imports/themes/side_nav_light/mozdef.css' )
+                    } else if ( preferenceRecord.theme == 'Dark Side Nav' ) {
+                        require( '/imports/themes/side_nav_dark/mozdef.css' )
                     } else {
                         require( '/imports/themes/classic/mozdef.css' );
                     }
