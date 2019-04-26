@@ -11,7 +11,6 @@ Copyright (c) 2014 Mozilla Corporation
 :root {
   --bg-primary-color: #e3dddb;
   --bg-secondary-color: #9abbe0;
-  --secondary-focus-color: #80b1f0;
   --row-color-odd: #71c0b9;
   --row-color-even: #42706c;
   --ack-edit-color: #a2a9b2;
@@ -499,7 +498,6 @@ nav.nav-main li.active>a,
 .dropdown-menu>.active>a:focus,
 .no-touch .dashboard-page nav.dashboard-menu ul li:hover a,
 .dashboard-page nav.dashboard-menu ul li.active a {
-  color: rgb(0, 0, 0);
   text-decoration: none;
   background-color: var(--secondary-focus-color);
 }
