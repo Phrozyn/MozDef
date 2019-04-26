@@ -11,18 +11,18 @@ Copyright (c) 2014 Mozilla Corporation
 
 :root {
   --primary-bg-color: #2a2f35;
+  --bg-secondary-color: #2d5fa0;
   --secondary-focus-color: #3b89ee;
-  --secondary-color: #2d5fa0;
   --row-color-odd: #2a2f35;
-  --row-color-even: #636c85;
+  --row-color-even: #586069;
   --ack-edit-color: #a2a9b2;
   --ack-edit-border-color: #adadad;
   --ack-edit-focus-color: #557750;
   --ack-edit-disabled-color: #557750;
   --arm-color: #e69006;
   --arm-focus-color: #d58512;
-  --font-main: #fff;
-  --font-focus: #000;
+  --txt-primary-color: #fff;
+  --txt-secondary-color: #000;
   --a-link-color: #a2a9b2;
 }
 
@@ -45,7 +45,7 @@ body{
     /*margin: 0;*/
     /*min-width: 990px;*/
     padding: 0;
-    color: var(--font-main);
+    color: var(--txt-primary-color);
     line-height: normal;
     text-align: left;
 }
@@ -56,12 +56,12 @@ body{
 
 /*mozdef custom */
 .upperwhite {
-    color: var(--font-main);
+    color: var(--txt-primary-color);
     text-transform: uppercase;
 }
 
 caption, legend {
-    color: var(--font-main);
+    color: var(--txt-primary-color);
 }
 
 .shadow {
@@ -69,7 +69,7 @@ caption, legend {
 }
 
 .ipaddress {
-  color: var(--font-main);
+  color: var(--txt-primary-color);
   font-style: normal;
   font-weight: normal;
 
@@ -101,7 +101,7 @@ caption, legend {
   opacity: .3;
   z-index: 2;
   font-size: 13px;
-  color: var(--font-main);
+  color: var(--txt-primary-color);
 }
 
 #bottom-toolbar:hover {
@@ -239,7 +239,7 @@ caption, legend {
 .btn {
   border: 1px outset;
   border-radius: 4px;
-  color: var(--font-main);
+  color: var(--txt-primary-color);
   background-color: var(--arm-color);
 }
 
@@ -247,7 +247,7 @@ caption, legend {
 .btn-warning:active,
 .btn-warning:hover,
 .open > .dropdown-toggle.btn-warning {
-  color: var(--font-focus);
+  color: var(--txt-secondary-color);
   background-color: var(--arm-focus-color);
   border-color: var(--arm-color);
 }
@@ -255,7 +255,7 @@ caption, legend {
 .btn-notice {
   border: 1px outset;
   border-radius: 4px;
-  color: var(--font-focus);
+  color: var(--txt-secondary-color);
   background-color: var(--ack-edit-color);
 }
 
@@ -263,13 +263,13 @@ caption, legend {
 .btn-notice:active,
 .btn-notice:hover,
 .open > .dropdown-toggle.btn-notice {
-  color: var(--font-main);
+  color: var(--txt-primary-color);
   background-color: var(--ack-edit-focus-color);
   border-color: var(--ack-edit-border-color);
 }
 
 .btn-notice:disabled, button[disabled] {
-  color: var(--font-main);
+  color: var(--txt-primary-color);
   background-color: var(--ack-edit-disabled-color);
   border-color: var(--ack-edit-border-color);
 }
@@ -277,12 +277,12 @@ caption, legend {
 .btn-generic {
   border: 1px outset;
   border-radius: 4px;
-  color: var(--font-focus);
+  color: var(--txt-secondary-color);
   background-color: var(--ack-edit-color);
 }
 
 .btn-generic:focus {
-  color: var(--font-main);
+  color: var(--txt-primary-color);
   background-color: #286090;
   border-color: #204d74;
 }
@@ -291,7 +291,7 @@ caption, legend {
 .btn-generic:active,
 .btn-genric:hover,
 .open > .dropdown-toggle.btn-generic {
-  color: var(--font-focus);
+  color: var(--txt-secondary-color);
   background-color: var(--ack-edit-focus-color);
   border-color: var(--ack-edit-border-color);
 }
@@ -327,11 +327,11 @@ input[type="search"] {
 .table-hover tbody tr:hover > th,
 .table-hover > tbody > tr:hover {
   background-color: #9a9ea5;
-  color: var(--font-focus);
+  color: var(--txt-secondary-color);
 }
 
 td{
-  color: var(--font-main);
+  color: var(--txt-primary-color);
 }
 
 .welcome {
@@ -390,17 +390,17 @@ td{
 }
 
 circle:hover{
-  fill: var(--font-main);
+  fill: var(--txt-primary-color);
 }
 
 .node {
-    stroke: var(--font-focus);
+    stroke: var(--txt-secondary-color);
     stroke-width: 1.5px;
 }
 
 .textlabel{
     stroke-width: .2px;
-    stroke: var(--font-focus);
+    stroke: var(--txt-secondary-color);
 }
 
 .vtagholders {
@@ -414,7 +414,7 @@ circle:hover{
 }
 
 #header a.mozdef{
-    color: var(--font-main);
+    color: var(--txt-primary-color);
     text-shadow: #000 5px 3px 3px;
     text-align: center;
     font-size: large;
@@ -467,7 +467,7 @@ nav.nav-main.expanded {
 
 .nav-main {
   background: var(--primary-bg-color);
-  border-right: 1px solid var(--secondary-color);
+  border-right: 1px solid var(--bg-secondary-color);
   position: fixed;
   top: 0;
   bottom: 0;
@@ -582,7 +582,7 @@ nav.nav-main li.active>a,
   left: 200px;
   top: 0;
   border: 0;
-  border-left: 4px solid var(--secondary-color);
+  border-left: 4px solid var(--bg-secondary-color);
 }
 
 .nav-main li ul li ul:before {
@@ -593,7 +593,7 @@ nav.nav-main li.active>a,
   /* == */
   left: -9px;
   /* == */
-  border-right: 5px solid var(--secondary-color);
+  border-right: 5px solid var(--bg-secondary-color);
   border-bottom: 5px solid transparent;
   border-top: 5px solid transparent;
 }
