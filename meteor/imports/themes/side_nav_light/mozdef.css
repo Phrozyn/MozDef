@@ -9,9 +9,9 @@ Copyright (c) 2014 Mozilla Corporation
 */
 
 :root {
-  --primary-bg-color: #e3dddb;
+  --bg-primary-color: #e3dddb;
+  --bg-secondary-color: #9abbe0;
   --secondary-focus-color: #80b1f0;
-  --secondary-color: #9abbe0;
   --row-color-odd: #71c0b9;
   --row-color-even: #42706c;
   --ack-edit-color: #a2a9b2;
@@ -20,8 +20,8 @@ Copyright (c) 2014 Mozilla Corporation
   --ack-edit-disabled-color: #557750;
   --arm-color: #ffae5f;
   --arm-focus-color: #d58512;
-  --font-main: #000;
-  --font-focus: #fff;
+  --txt-primary-color: #000;
+  --txt-secondary-color: #fff;
   --a-link-color: #a2a9b2;
 }
 
@@ -44,7 +44,7 @@ body{
     /*margin: 0;*/
     /*min-width: 990px;*/
     padding: 0;
-    color: var(--font-main);
+    color: var(--txt-primary-color);
     line-height: normal;
     text-align: left;
 }
@@ -55,12 +55,12 @@ body{
 
 /*mozdef custom */
 .upperwhite {
-    color: var(--font-main);
+    color: var(--txt-primary-color);
     text-transform: uppercase;
 }
 
 caption, legend {
-    color: var(--font-main);
+    color: var(--txt-primary-color);
 }
 
 .shadow {
@@ -68,7 +68,7 @@ caption, legend {
 }
 
 .ipaddress {
-  color: var(--font-main);
+  color: var(--txt-primary-color);
   font-style: normal;
   font-weight: normal;
 
@@ -100,7 +100,7 @@ caption, legend {
   opacity: .3;
   z-index: 2;
   font-size: 13px;
-  color: var(--font-main);
+  color: var(--txt-primary-color);
 }
 
 #bottom-toolbar:hover {
@@ -238,7 +238,7 @@ caption, legend {
 .btn {
   border: 1px outset;
   border-radius: 4px;
-  color: var(--font-main);
+  color: var(--txt-primary-color);
   background-color: var(--arm-color);
 }
 
@@ -246,7 +246,7 @@ caption, legend {
 .btn-warning:active,
 .btn-warning:hover,
 .open > .dropdown-toggle.btn-warning {
-  color: var(--font-focus);
+  color: var(--txt-secondary-color);
   background-color: var(--arm-focus-color);
   border-color: var(--arm-color);
 }
@@ -254,7 +254,7 @@ caption, legend {
 .btn-notice {
   border: 1px outset;
   border-radius: 4px;
-  color: var(--font-focus);
+  color: var(--txt-secondary-color);
   background-color: var(--ack-edit-color);
 }
 
@@ -262,13 +262,13 @@ caption, legend {
 .btn-notice:active,
 .btn-notice:hover,
 .open > .dropdown-toggle.btn-notice {
-  color: var(--font-main);
+  color: var(--txt-primary-color);
   background-color: var(--ack-edit-focus-color);
   border-color: var(--ack-edit-border-color);
 }
 
 .btn-notice:disabled, button[disabled] {
-  color: var(--font-main);
+  color: var(--txt-primary-color);
   background-color: var(--ack-edit-disabled-color);
   border-color: var(--ack-edit-border-color);
 }
@@ -276,12 +276,12 @@ caption, legend {
 .btn-generic {
   border: 1px outset;
   border-radius: 4px;
-  color: var(--font-focus);
+  color: var(--txt-secondary-color);
   background-color: var(--ack-edit-color);
 }
 
 .btn-generic:focus {
-  color: var(--font-main);
+  color: var(--txt-primary-color);
   background-color: #286090;
   border-color: #204d74;
 }
@@ -290,7 +290,7 @@ caption, legend {
 .btn-generic:active,
 .btn-genric:hover,
 .open > .dropdown-toggle.btn-generic {
-  color: var(--font-focus);
+  color: var(--txt-secondary-color);
   background-color: var(--ack-edit-focus-color);
   border-color: var(--ack-edit-border-color);
 }
@@ -326,11 +326,11 @@ input[type="search"] {
 .table-hover tbody tr:hover > th,
 .table-hover > tbody > tr:hover {
   background-color: #9a9ea5;
-  color: var(--font-focus);
+  color: var(--txt-secondary-color);
 }
 
 td{
-  color: var(--font-main);
+  color: var(--txt-primary-color);
 }
 
 .welcome {
@@ -389,17 +389,17 @@ td{
 }
 
 circle:hover{
-  fill: var(--font-main);
+  fill: var(--txt-primary-color);
 }
 
 .node {
-    stroke: var(--font-focus);
+    stroke: var(--txt-secondary-color);
     stroke-width: 1.5px;
 }
 
 .textlabel{
     stroke-width: .2px;
-    stroke: var(--font-focus);
+    stroke: var(--txt-secondary-color);
 }
 
 .vtagholders {
@@ -413,7 +413,7 @@ circle:hover{
 }
 
 #header a.mozdef{
-    color: var(--font-main);
+    color: var(--txt-primary-color);
     text-shadow: #000 5px 3px 3px;
     text-align: center;
     font-size: large;
@@ -465,8 +465,8 @@ nav.nav-main.expanded {
 }
 
 .nav-main {
-  background: var(--primary-bg-color);
-  border-right: 1px solid var(--secondary-color);
+  background: var(--bg-primary-color);
+  border-right: 1px solid var(--bg-secondary-color);
   position: fixed;
   top: 0;
   bottom: 0;
@@ -510,7 +510,7 @@ nav.nav-main li.active>a,
   height: auto;
   min-width: 120px;
   margin: 0;
-  background: var(--primary-bg-color);
+  background: var(--bg-primary-color);
   opacity: 0;
   visibility: hidden;
   transition: all 300ms linear;
@@ -581,7 +581,7 @@ nav.nav-main li.active>a,
   left: 200px;
   top: 0;
   border: 0;
-  border-left: 4px solid var(--secondary-color);
+  border-left: 4px solid var(--bg-secondary-color);
 }
 
 .nav-main li ul li ul:before {
@@ -592,7 +592,7 @@ nav.nav-main li.active>a,
   /* == */
   left: -9px;
   /* == */
-  border-right: 5px solid var(--secondary-color);
+  border-right: 5px solid var(--bg-secondary-color);
   border-bottom: 5px solid transparent;
   border-top: 5px solid transparent;
 }

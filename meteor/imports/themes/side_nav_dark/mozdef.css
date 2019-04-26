@@ -10,7 +10,7 @@ Copyright (c) 2014 Mozilla Corporation
 */
 
 :root {
-  --primary-bg-color: #2a2f35;
+  --bg-primary-color: #2a2f35;
   --bg-secondary-color: #2d5fa0;
   --secondary-focus-color: #3b89ee;
   --row-color-odd: #2a2f35;
@@ -466,7 +466,7 @@ nav.nav-main.expanded {
 }
 
 .nav-main {
-  background: var(--primary-bg-color);
+  background: var(--bg-primary-color);
   border-right: 1px solid var(--bg-secondary-color);
   position: fixed;
   top: 0;
@@ -511,7 +511,7 @@ nav.nav-main li.active>a,
   height: auto;
   min-width: 120px;
   margin: 0;
-  background: var(--primary-bg-color);
+  background: var(--bg-primary-color);
   opacity: 0;
   visibility: hidden;
   transition: all 300ms linear;
