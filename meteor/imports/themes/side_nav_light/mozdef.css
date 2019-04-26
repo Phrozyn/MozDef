@@ -21,6 +21,7 @@ Copyright (c) 2014 Mozilla Corporation
   --arm-focus-color: #d58512;
   --txt-primary-color: #000;
   --txt-secondary-color: #fff;
+  --txt-shadow-color: #80b1f0;
   --a-link-color: #a2a9b2;
 }
 
@@ -60,10 +61,6 @@ body{
 
 caption, legend {
     color: var(--txt-primary-color);
-}
-
-.shadow {
-    text-shadow: #000 .7px .7px .7px;
 }
 
 .ipaddress {
@@ -483,6 +480,10 @@ nav.nav-main.expanded {
   margin: 7px 0;
 }
 
+.nav-main ul ul {
+  text-shadow: none;
+}
+
 .nav-main li {
   position: relative;
   display: block;
@@ -500,6 +501,7 @@ nav.nav-main li.active>a,
 .dashboard-page nav.dashboard-menu ul li.active a {
   text-decoration: none;
   background-color: var(--secondary-focus-color);
+  -webkit-box-shadow: rgba(201, 212, 221, 0.747) 0 0 0,inset rgba(193, 198, 198, 0.72) 0 -6px 20px 10px;;
 }
 
 .nav-main li ul,

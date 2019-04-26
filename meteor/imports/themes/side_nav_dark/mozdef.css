@@ -12,7 +12,6 @@ Copyright (c) 2014 Mozilla Corporation
 :root {
   --bg-primary-color: #2a2f35;
   --bg-secondary-color: #2d5fa0;
-  --secondary-focus-color: #3b89ee;
   --row-color-odd: #2a2f35;
   --row-color-even: #586069;
   --ack-edit-color: #a2a9b2;
@@ -23,6 +22,7 @@ Copyright (c) 2014 Mozilla Corporation
   --arm-focus-color: #d58512;
   --txt-primary-color: #fff;
   --txt-secondary-color: #000;
+  --txt-shadow-color: #3b89ee;
   --a-link-color: #a2a9b2;
 }
 
