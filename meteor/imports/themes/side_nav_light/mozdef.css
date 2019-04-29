@@ -11,8 +11,8 @@ Copyright (c) 2014 Mozilla Corporation
 :root {
   --bg-primary-color: #e3dddb;
   --bg-secondary-color: #9abbe0;
-  --row-color-odd: #71c0b9;
-  --row-color-even: #42706c;
+  --row-color-odd: #e3dddb;
+  --row-color-even: #919191;
   --ack-edit-color: #a2a9b2;
   --ack-edit-border-color: #adadad;
   --ack-edit-focus-color: #557750;
